@@ -12,12 +12,13 @@ export default function Contact() {
         <ContactFrame>
           <ContactFrameChild>
             <ContactFrameWrapper name="contact" action="/contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
               <EmailTitle>e-mail</EmailTitle>
-              <EmailInput name="email" type="email" />
+              <EmailInput required name="email" type="email" />
               <SubjectTitle>subject</SubjectTitle>
-              <SubjectInput name="subject" type="text" />
+              <SubjectInput required name="subject" type="text" />
               <MessageTitle>message</MessageTitle>
-              <MessageInput name="message" type="text" />
+              <MessageInput required name="message" type="text" />
               <SubmitButton type="submit">Send</SubmitButton>
             </ContactFrameWrapper>
           </ContactFrameChild>
