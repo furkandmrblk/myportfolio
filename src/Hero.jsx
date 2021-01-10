@@ -11,16 +11,17 @@ export default function Hero() {
     <>
       <HeroWrapper>
         <HeroImage />
-
-        <HeroText>Hi, I'm Furkan.</HeroText>
-        <HeroText2>A Web Developer.</HeroText2>
-        <HeroText3>
-          <span style={{ color: '#5b56f4' }}>{'<>'} </span>I create Websites.
-        </HeroText3>
-        <HeroText4>
-          <span style={{ color: '#2C9487' }}>{'<>'} </span> Unique.
-          Unparalleled.
-        </HeroText4>
+        <HeroTextWrapper>
+          <HeroText>Hi, I'm Furkan.</HeroText>
+          <HeroText2>A Web Developer.</HeroText2>
+          <HeroText3>
+            <span style={{ color: '#5b56f4' }}>{'<>'} </span>I create Websites.
+          </HeroText3>
+          <HeroText4>
+            <span style={{ color: '#2C9487' }}>{'<>'} </span> Unique.
+            Unparalleled.
+          </HeroText4>
+        </HeroTextWrapper>
       </HeroWrapper>
       <HeroWrapper2>
         <Links>
@@ -50,6 +51,18 @@ const HeroWrapper = styled.div`
   }
 `;
 
+const HeroTextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: -12vh;
+
+  @media ${mindevice.tablet} {
+    margin-top: -5.5vh;
+  }
+`;
+
 const HeroWrapper2 = styled.div`
   padding: 0 3.375rem;
   display: flex;
@@ -70,11 +83,8 @@ const herotextmobile = keyframes`
 `;
 
 const HeroText = styled.div`
-  display: block;
-  position: absolute;
+  margin-right: 8rem;
   font-size: 20px;
-  margin-bottom: 240px;
-  margin-right: 120px;
 
   @media ${maxdevice.tablet} {
     animation-name: ${herotextmobile};
@@ -84,9 +94,8 @@ const HeroText = styled.div`
   }
 
   @media ${mindevice.tablet} {
-    margin-right: 0;
-    margin-left: 302px;
-    margin-top: 20px;
+    margin-top: -0.7rem;
+    margin-left: 26.8rem;
     animation: typing 2s steps(15, end) forwards, blink 1s 2;
     overflow: hidden;
     white-space: nowrap;
@@ -111,11 +120,8 @@ const HeroText = styled.div`
   }
 `;
 const HeroText2 = styled.div`
-  display: block;
-  position: absolute;
+  margin-right: 5.5rem;
   font-size: 20px;
-  margin-bottom: 170px;
-  margin-right: 78px;
 
   @media ${maxdevice.tablet} {
     animation-name: ${herotextmobile};
@@ -125,15 +131,14 @@ const HeroText2 = styled.div`
   }
 
   @media ${mindevice.tablet} {
+    margin-left: 24.3rem;
+    margin-top: 0.3rem;
     opacity: 0;
-    margin-right: 0;
-    margin-left: 302px;
-    margin-top: 20px;
-    animation: typing 2s steps(15, end) forwards, blink 1s 4;
+    animation: typing 2s steps(16, end) forwards, blink 1s 4;
     animation-delay: 2s;
     overflow: hidden;
     white-space: nowrap;
-    width: 15ch;
+    width: 16ch;
 
     @keyframes typing {
       0% {
@@ -157,8 +162,8 @@ const HeroText2 = styled.div`
 `;
 
 const HeroText3 = styled.div`
-  display: block;
-  position: absolute;
+  margin-top: 4rem;
+  margin-left: 2rem;
   font-size: 20px;
 
   @media ${maxdevice.tablet} {
@@ -169,18 +174,14 @@ const HeroText3 = styled.div`
   }
 
   @media ${mindevice.tablet} {
-    margin-right: 0;
-    margin-left: 360px;
-    margin-top: 20px;
+    margin-top: 3.5rem;
+    margin-left: 22.5rem;
   }
 `;
 
 const HeroText4 = styled.div`
-  display: block;
-  position: absolute;
   font-size: 20px;
-  margin-top: 70px;
-  margin-left: 35px;
+  margin-left: 4.1rem;
 
   @media ${maxdevice.tablet} {
     animation-name: ${herotextmobile};
@@ -190,9 +191,8 @@ const HeroText4 = styled.div`
   }
 
   @media ${mindevice.tablet} {
-    margin-right: 0;
-    margin-left: 394px;
-    margin-top: 90px;
+    margin-left: 24.7rem;
+    margin-top: 0.31rem;
   }
 `;
 
