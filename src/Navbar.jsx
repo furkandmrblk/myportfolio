@@ -19,7 +19,7 @@ const Navbar = () => {
       </Hamburger>
       <Menu open={open}>
         <MenuLink href="#project">Projects</MenuLink>
-        <MenuLink href="/">About Me</MenuLink>
+        <MenuLink href="/about">About Me</MenuLink>
         <MenuLink href="#contactme">Contact</MenuLink>
       </Menu>
     </Nav>

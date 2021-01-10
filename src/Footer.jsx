@@ -13,7 +13,7 @@ export default function Footer() {
         <Links>
           <FooterLinks href="#home">Home</FooterLinks>
           <FooterLinks href="#project">Projects</FooterLinks>
-          <FooterLinks href="/">About</FooterLinks>
+          <FooterLinks href="/about">About</FooterLinks>
         </Links>
         <Logo href="#home">
           <LogoLogo src={LogoImg} alt="logoimg" />

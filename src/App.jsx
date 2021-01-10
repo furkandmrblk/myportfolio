@@ -1,27 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './Navbar';
-import Hero from './Hero';
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './Footer';
+import LandingPage from './LandingPage';
+import AboutMe from './AboutMe';
 
 function App() {
   return (
-    <Container>
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Contact />
-      <Footer />
-    </Container>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/about" component={AboutMe} />
+      </Switch>
+    </Router>
   );
 }
-
-const Container = styled.div`
-  background: #0d0d0d;
-  height: 100vh;
-`;
 
 export default App;
