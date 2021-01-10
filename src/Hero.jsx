@@ -70,6 +70,7 @@ const herotextmobile = keyframes`
 `;
 
 const HeroText = styled.div`
+  display: block;
   position: absolute;
   font-size: 20px;
   margin-bottom: 240px;
@@ -110,6 +111,7 @@ const HeroText = styled.div`
   }
 `;
 const HeroText2 = styled.div`
+  display: block;
   position: absolute;
   font-size: 20px;
   margin-bottom: 170px;
@@ -155,6 +157,7 @@ const HeroText2 = styled.div`
 `;
 
 const HeroText3 = styled.div`
+  display: block;
   position: absolute;
   font-size: 20px;
 
@@ -173,6 +176,7 @@ const HeroText3 = styled.div`
 `;
 
 const HeroText4 = styled.div`
+  display: block;
   position: absolute;
   font-size: 20px;
   margin-top: 70px;
