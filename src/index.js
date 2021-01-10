@@ -5,12 +5,12 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 import GlobalStyle from './theme/globalStyles';
-import Theme from './theme/theme';
+import { theme } from './theme/theme';
 
 const root = document.getElementById('root');
 
 ReactDOM.render(
-  <ThemeProvider theme={Theme}>
+  <ThemeProvider theme={theme}>
     <GlobalStyle />
     <App />
   </ThemeProvider>,
