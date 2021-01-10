@@ -192,6 +192,7 @@ const ProjectFrameRepo = styled.a`
   margin-left: 0.7rem;
   margin-bottom: 3.75rem;
   text-decoration: none;
+  color: ${(props) => props.theme.colors.white};
   transition: all 0.15s ease-in-out;
 
   &:visited {
