@@ -118,8 +118,13 @@ const FooterLinks = styled.a`
   font-size: 0.875rem;
   font-weight: 300;
   text-decoration: none;
+  color: ${(props) => props.theme.colors.white};
 
   &:visited {
     color: #fff;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.colors.purple};
   }
 `;

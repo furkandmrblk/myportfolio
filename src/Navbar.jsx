@@ -74,6 +74,7 @@ const MenuLink = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.15s ease-in-out;
+  color: ${(props) => props.theme.colors.white};
   cursor: pointer;
 
   &:visited {
