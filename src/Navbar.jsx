@@ -18,9 +18,9 @@ const Navbar = () => {
         <span></span>
       </Hamburger>
       <Menu open={open}>
-        <MenuLink href="#project">Projects</MenuLink>
+        <MenuLink href="/#project">Projects</MenuLink>
         <MenuLink href="/about">About Me</MenuLink>
-        <MenuLink href="#contactme">Contact</MenuLink>
+        <MenuLink href="/#contactme">Contact</MenuLink>
       </Menu>
     </Nav>
   );

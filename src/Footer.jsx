@@ -11,11 +11,11 @@ export default function Footer() {
     <FooterWrapper>
       <FooterGrid>
         <Links>
-          <FooterLinks href="/">Home</FooterLinks>
-          <FooterLinks href="#project">Projects</FooterLinks>
+          <FooterLinks href="/#home">Home</FooterLinks>
+          <FooterLinks href="/#project">Projects</FooterLinks>
           <FooterLinks href="/about">About</FooterLinks>
         </Links>
-        <Logo href="/">
+        <Logo href="/#home">
           <LogoLogo src={LogoImg} alt="logoimg" />
         </Logo>
         <LogoLinks>
