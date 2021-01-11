@@ -32,7 +32,7 @@ export default function Footer() {
 
 const FooterWrapper = styled.div`
   position: relative;
-  padding: 13.75rem 3.0625rem 0 3.0625rem;
+  padding: 7.2rem 3.0625rem 0 3.0625rem;
 `;
 
 const FooterGrid = styled.div`

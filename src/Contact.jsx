@@ -5,8 +5,8 @@ import { mindevice } from './theme/mediaQueries';
 export default function Contact() {
   return (
     <>
-      <ContactTitleWrapper id="contactme">
-        <ContactTitle>Contact Me</ContactTitle>
+      <ContactTitleWrapper>
+        <ContactTitle id="contactme">Contact Me</ContactTitle>
       </ContactTitleWrapper>
       <ContactWrapper>
         <ContactFrame>
@@ -111,7 +111,7 @@ const ContactFrameChild = styled.div`
   }
 
   @media ${mindevice.laptop} {
-    width: 41.3125rem;
+    width: 47.3125rem;
   }
 `;
 
@@ -132,7 +132,7 @@ const ContactFrameChild2 = styled.div`
   }
 
   @media ${mindevice.laptop} {
-    width: 41.3125rem;
+    width: 47.3125rem;
   }
 `;
 
@@ -141,6 +141,9 @@ const ContactFrameWrapper = styled.form`
 
   @media ${mindevice.tablet} {
     padding: 1.8125rem 14rem 1.8125rem 1.5rem;
+  }
+  @media ${mindevice.laptop} {
+    padding: 1.8125rem 19rem 1.8125rem 1.5rem;
   }
 `;
 

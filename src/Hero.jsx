@@ -176,6 +176,11 @@ const HeroText3 = styled.div`
   @media ${mindevice.tablet} {
     margin-top: 3.5rem;
     margin-left: 22.5rem;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.purple};
+    }
   }
 `;
 
@@ -193,6 +198,11 @@ const HeroText4 = styled.div`
   @media ${mindevice.tablet} {
     margin-left: 24.7rem;
     margin-top: 0.31rem;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.bluegreen};
+    }
   }
 `;
 
@@ -239,6 +249,11 @@ const GitHub = styled.a`
   width: 2.3075rem;
   margin-right: 1.74125rem;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 `;
 
 const LinkedIn = styled.a`
@@ -249,4 +264,9 @@ const LinkedIn = styled.a`
   height: 2.36375rem;
   width: 2.36375rem;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 `;
