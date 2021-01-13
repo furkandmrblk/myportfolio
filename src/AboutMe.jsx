@@ -26,8 +26,8 @@ export default function AboutMe() {
         </AboutMeText>
         <AboutMeText>
           At the end of 2020 I quickly realized that I have a passion for web
-          development & web design. I am a self thaught web developer & I like
-          to create my own designs.
+          development & web design. I am a self-taught web developer & I like to
+          create my own designs.
         </AboutMeText>
       </AboutMeFlexBox>
       <Footer />
